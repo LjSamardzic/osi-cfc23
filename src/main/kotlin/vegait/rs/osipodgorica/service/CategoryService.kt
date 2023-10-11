@@ -14,7 +14,7 @@ class CategoryService(val categoryRepo: CategoryRepository, val uploadService: I
         val category = categoryRepo.save(Category(name = request.name))
 
         val imagePath = uploadService.store(request.thumbnail, "categories/" + category.id)
-        category.thumbnailUrl = imagePath
+        category.relativeUrl = imagePath
 
         return categoryRepo.save(category)
     }

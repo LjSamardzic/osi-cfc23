@@ -57,15 +57,15 @@ class InitSeeder(
 
     private fun categories(): List<Category> {
         return arrayListOf(
-          Category(id = 1, name = "Objekti državnih organa", thumbnailUrl = "/uploads/categories/1/image.jpg"),
-          Category(id = 2, name = "Lokalna samouprava", thumbnailUrl = "/uploads/categories/2/image.jpg"),
-          Category(id = 3, name = "Zdravstvo", thumbnailUrl = "/uploads/categories/3/image.jpg"),
-          Category(id = 4, name = "Obrazovanje", thumbnailUrl = "/uploads/categories/4/image.jpg"),
-          Category(id = 5, name = "Kultura", thumbnailUrl = "/uploads/categories/5/image.jpg"),
-          Category(id = 6, name = "Otvoreni i zatvoreni sportski i rekreativni objekti", thumbnailUrl = "/uploads/categories/6/image.jpg"),
-          Category(id = 7, name = "Saobraćajni terminali", thumbnailUrl = "/uploads/categories/7/image.jpg"),
-          Category(id = 8, name = "Pošte", thumbnailUrl = "/uploads/categories/8/image.jpg"),
-          Category(id = 9, name = "Ostalo", thumbnailUrl = "/uploads/categories/9/image.jpg"),
+          Category(id = 1, name = "Objekti državnih organa", relativeUrl = "/uploads/categories/1/image.jpg"),
+          Category(id = 2, name = "Lokalna samouprava", relativeUrl = "/uploads/categories/2/image.jpg"),
+          Category(id = 3, name = "Zdravstvo", relativeUrl = "/uploads/categories/3/image.jpg"),
+          Category(id = 4, name = "Obrazovanje", relativeUrl = "/uploads/categories/4/image.jpg"),
+          Category(id = 5, name = "Kultura", relativeUrl = "/uploads/categories/5/image.jpg"),
+          Category(id = 6, name = "Otvoreni i zatvoreni sportski i rekreativni objekti", relativeUrl = "/uploads/categories/6/image.jpg"),
+          Category(id = 7, name = "Saobraćajni terminali", relativeUrl = "/uploads/categories/7/image.jpg"),
+          Category(id = 8, name = "Pošte", relativeUrl = "/uploads/categories/8/image.jpg"),
+          Category(id = 9, name = "Ostalo", relativeUrl = "/uploads/categories/9/image.jpg"),
         )
     }
 
