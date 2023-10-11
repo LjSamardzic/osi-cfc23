@@ -1,6 +1,6 @@
 # Code for cause 2013 for OSI Podgorica
 
-## To run project execute command
+## To run project execute docker command or setup mysql db:
 
 - Setup database
 ```bash
@@ -23,3 +23,7 @@ mysql:latest
 ```bash
 gradlew.bat bootRun
 ```
+
+- Application should be runing on `localhost:8080`
+
+- Swagger UI is avalable on `http://localhost:8080/swagger-ui/index.html`

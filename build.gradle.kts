@@ -37,7 +37,9 @@ dependencies {
 	implementation("com.blazebit:blaze-persistence-core-api-jakarta:1.6.9")
 	runtimeOnly("com.blazebit:blaze-persistence-core-impl-jakarta:1.6.9")
 	implementation("com.blazebit:blaze-persistence-integration-hibernate-6.2:1.6.9")
+	implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.2.0")
 
+	
 //	implementation("jakarta.xml.bind:jakarta.xml.bind-api:4.0.1")
 //	implementation("com.sun.xml.bind:jaxb-impl:4.0.3")
 //	implementation("jakarta.transaction:jakarta.transaction-api:2.0.1")
