@@ -9,11 +9,11 @@ import vegait.rs.osipodgorica.repository.CategoryRepository
 class CategoryService(val categoryRepo: CategoryRepository) {
 
     fun store(request: CreateCategoryRequest): Category {
-        val locationCategory = Category(name = request.name)
-        return categoryRepo.save(locationCategory)
+        val category = Category(name = request.name)
+        return categoryRepo.save(category)
     }
 
-    fun get(id : Long): Category {
+    fun get(id: Long): Category {
         return categoryRepo.findById(id).orElseThrow()
     }
 

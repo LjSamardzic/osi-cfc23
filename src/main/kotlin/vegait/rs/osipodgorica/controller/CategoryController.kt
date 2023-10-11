@@ -6,7 +6,7 @@ import vegait.rs.osipodgorica.model.Category
 import vegait.rs.osipodgorica.service.CategoryService
 
 @RestController
-@RequestMapping("/api/v1/location-categories")
+@RequestMapping("/api/v1/categories")
 class CategoryController(val categoryService: CategoryService) {
 
     @PostMapping
