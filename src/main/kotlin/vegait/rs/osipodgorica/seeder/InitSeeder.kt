@@ -74,6 +74,7 @@ class InitSeeder(
         val culturalFacility = categoryRepo.findByName("Kultura")
         val hospital = categoryRepo.findByName("Obrazovanje")
         val parking = featuresRepo.findByName("Parking mjesto")
+        val ostalo = featuresRepo.findByName("Ostalo")
         val ramp = featuresRepo.findByName("Rampa")
         val loo = featuresRepo.findByName("Toalet")
 
@@ -101,6 +102,38 @@ class InitSeeder(
                 accessibilityFeatures = hashSetOf(ramp),
                 latitude = 42.442171,
                 longitude = 19.252682
+            )
+            Location(
+                name = "MUP",
+                description = "Ministarstvo unutrašnjih poslova",
+                category = publicFacility,
+                accessibilityFeatures = hashSetOf(ramp),
+                latitude = 42.442171,
+                longitude = 19.252682
+            ),
+            Location(
+                name = "Crnogorsko Komercijalna Banka",
+                description = "Crnogorsko Komercijalna Banka",
+                category = ostalo,
+                accessibilityFeatures = hashSetOf(ramp, loo),
+                latitude = 42.441631066437786,
+                longitude = 19.247161806315603
+            ),
+            Location(
+                name = "Filijala Crnogorska Komercijalna Banka",
+                description = "filijala-crnogorska-komercijalna-banka",
+                category = ostalo,
+                accessibilityFeatures = hashSetOf(ramp, loo),
+                latitude = 42.44190356595263,
+                longitude = 19.247437111656154
+            ),
+             Location(
+                name = "Filijala Crnogorska Komercijalna Banka 2",
+                description = "filijala-crnogorska-komercijalna-banka",
+                category = ostalo,
+                accessibilityFeatures = hashSetOf(ramp, loo),
+                latitude = 42.442468066159144,
+                longitude = 19.249060753384356
             )
         )
     }
