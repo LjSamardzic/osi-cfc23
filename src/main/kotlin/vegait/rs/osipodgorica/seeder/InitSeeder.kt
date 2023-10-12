@@ -70,11 +70,13 @@ class InitSeeder(
     }
 
     private fun locations(): List<Location> {
+        // kategory
         val publicFacility = categoryRepo.findByName("Objekti državnih organa")
         val culturalFacility = categoryRepo.findByName("Kultura")
         val hospital = categoryRepo.findByName("Obrazovanje")
+        val ostalo = categoryRepo.findByName("Ostalo")
+        // features
         val parking = featuresRepo.findByName("Parking mjesto")
-        val ostalo = featuresRepo.findByName("Ostalo")
         val ramp = featuresRepo.findByName("Rampa")
         val loo = featuresRepo.findByName("Toalet")
 
@@ -102,7 +104,7 @@ class InitSeeder(
                 accessibilityFeatures = hashSetOf(ramp),
                 latitude = 42.442171,
                 longitude = 19.252682
-            )
+            ),
             Location(
                 name = "MUP",
                 description = "Ministarstvo unutrašnjih poslova",
