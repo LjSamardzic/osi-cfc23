@@ -9,7 +9,7 @@ docker run -p 3306:3306 -d --name osi-db-con \
 mysql:latest
 ```    
 ### Kako pokrenuti aplikaciju:
-1. Potrebno je skinuti [JDK 17](https://adoptium.net/temurin/releases/)  i setovati JAVA_HOME env varijablu
+1. Potrebno je skinuti [JDK 17](https://adoptium.net/en-GB/temurin/releases/?version=17)  i setovati JAVA_HOME env varijablu
 da pokazuje na jdk koji smo skinuli. Putanja treba da upućuje na root folder unutar kod je bin folder.
    
 2. U projektu postoji Gradle wrapper koji možemo koristiti da podignemo aplikaciju.
