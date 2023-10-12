@@ -42,9 +42,8 @@ Korisne informacije o gradle wrapper-u:
 ```bash
 ./gradlew.bat test
 ```
-<br>
 
 #### Napomene:
 Prilikom prvog podizanja aplikacije automatski će biti kreirani određeni testni podaci - kategorije, elementi pristupačnosti i par lokacija koje možemo iskoristiti da istestiramo osnovne funkcionalnosti. 
 
-#### Aplikacija je dostupna na [http://localhost:8080](http://localhost:8080) a swagger UI na [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html)`
+#### Aplikacija je dostupna na [http://localhost:8080](http://localhost:8080) a swagger UI na [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html)
