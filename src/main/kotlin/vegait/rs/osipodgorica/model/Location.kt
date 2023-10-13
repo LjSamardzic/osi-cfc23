@@ -1,8 +1,10 @@
 package vegait.rs.osipodgorica.model
 
 import jakarta.persistence.*
+import vegait.rs.osipodgorica.interfaces.HasImages
 
 @Entity
+@DiscriminatorValue("location")
 @Table(name = "locations")
 class Location (
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,5 +23,5 @@ class Location (
         inverseJoinColumns = arrayOf(JoinColumn(name = "accessibility_feature_id"))
     )
     var accessibilityFeatures: Set<AccessibilityFeature> = hashSetOf()
-)
+): HasImages
 
